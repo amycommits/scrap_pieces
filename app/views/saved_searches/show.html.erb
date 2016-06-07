@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @saved_search.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @saved_search.user %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @saved_search.description %>
+</p>
+
+<p>
+  <strong>Params:</strong>
+  <%= @saved_search.params %>
+</p>
+
+<p>
+  <strong>Searched index:</strong>
+  <%= @saved_search.searched_index %>
+</p>
+
+<%= link_to 'Edit', edit_saved_search_path(@saved_search) %> |
+<%= link_to 'Back', saved_searches_path %>
