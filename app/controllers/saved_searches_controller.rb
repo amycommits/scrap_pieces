@@ -5,9 +5,7 @@ class SavedSearchesController < ApplicationController
   # GET /saved_searches.json
   def index
     @saved_searches = SavedSearch.all
-    if @saved_searches.nil?
-       @saved_searches = current_user.saved_searches.build
-    end
+ 
   end
 
   # GET /saved_searches/1
