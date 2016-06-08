@@ -6,4 +6,8 @@ $(document).ready(function() {
     );
     //$('#new_saved_search').hide().after('');
    */ 
+   $("a").on("ajax:success", function(e, data, status, xhr){
+   	//$(document).append(xhr.responseText)
+
+   });
 });

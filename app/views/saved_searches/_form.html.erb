@@ -1,4 +1,4 @@
-<%= form_for(@saved_search, :remote => true) do |f| %>
+<%= form_for(@saved_search) do |f| %>
   <% if @saved_search.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@saved_search.errors.count, "error") %> prohibited this saved_search from being saved:</h2>
